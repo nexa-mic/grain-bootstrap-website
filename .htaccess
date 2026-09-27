@@ -12,6 +12,9 @@
 </IfModule>
 # END cPanel-generated php ini directives, do not edit
 
+# Show the branded page while preserving the HTTP 404 status for missing URLs.
+ErrorDocument 404 /404.html
+
 RewriteEngine On
 
 # Redirect explicit HTML requests to the public, extensionless URLs.
